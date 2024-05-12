@@ -1,0 +1,22 @@
+body {
+  background-color: #000; }
+
+h1, h2, h3,
+h4, h5, h6,
+span, p, a {
+  color: #fff;
+  margin: 0; }
+
+#index_section {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh; }
+  #index_section .call_to_action_typo {
+    text-align: center; }
+  #index_section .disappearing_line_box {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    border: 5px solid red;
+    min-height: 100vh;
+    justify-content: center; }

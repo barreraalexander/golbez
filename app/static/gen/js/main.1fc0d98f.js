@@ -1,3 +1,6 @@
+
+const X = "100"
+
 // give each line a class that will give it a full vh,
 // when it's about to come in or go out of view, it disappears
 
@@ -5,7 +8,7 @@
 if ($('#index_section').length){
     let options = {
         root: null,
-        threshold: .8,
+        threshold: .5,
     }
 
     let section_observer = new IntersectionObserver(

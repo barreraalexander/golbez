@@ -1,11 +1,26 @@
 #index_section{
     display: flex;
     flex-flow: column;
-    align-items: center;
-    justify-content: center;
+    // align-items: center;
+    // justify-content: center;
     min-height: 100vh;
 
     .call_to_action_typo{
         text-align: center;
+    }
+
+    .disappearing_line_box{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        min-height: 100vh;
+        justify-content: center;
+
+        p{
+            font-size: 5em;
+            font-weight: 600;
+            opacity: 0;
+            transition: 3s;
+        }
     }
 }

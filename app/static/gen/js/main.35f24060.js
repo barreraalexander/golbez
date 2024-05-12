@@ -1,3 +1,6 @@
+
+const X = "100"
+
 // give each line a class that will give it a full vh,
 // when it's about to come in or go out of view, it disappears
 
@@ -5,27 +8,22 @@
 if ($('#index_section').length){
     let options = {
         root: null,
-        threshold: .8,
+        threshold: .4,
     }
 
     let section_observer = new IntersectionObserver(
         function(entries, section_observer){
         entries.forEach(entry => {
-            let $target = $(entry.target)
             if (entry.isIntersecting){
-
-                $target.find('p').css('opacity', 1)
-                
+                console.log(entry.target)
             } else {
-                $target.find('p').css('opacity', 0)
             }
         })
     }, options);
     
 
-    $.each($('.disappearing_line_box'), function(elem_index, elem){
+    $.each('.disappearing_line_box', function(elem_index, elem){
         section_observer.observe(elem)
-
 
     })
 
