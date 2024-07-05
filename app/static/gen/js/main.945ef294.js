@@ -1,3 +1,6 @@
+
+const X = "100"
+
 // give each line a class that will give it a full vh,
 // when it's about to come in or go out of view, it disappears
 

@@ -13,11 +13,13 @@
         display: flex;
         flex-flow: column;
         align-items: center;
-        min-height: 100vh;
+        // min-height: 100vh;
+        min-height: 75vh;
         justify-content: center;
 
         p{
-            font-size: 5em;
+            // white-space: pre-wrap;
+            font-size: 3em;
             font-weight: 600;
             opacity: 0;
             transition: 3s;
